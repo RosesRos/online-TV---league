@@ -1,0 +1,118 @@
+extends ../layout/default.pug 
+
+block title 
+    title Online TV
+
+block content
+
+    section.banner(id="banner") 
+        .container 
+            .banner_inner  
+                .banner_text-block-wrapper
+                    .banner_text-block(data-aos="fade-right") 
+                        h1.banner_title Zack Snyder's Justice League 
+                        .banner_info 
+                            span.banner_info_year 2021 
+                            span.banner_info_age 18+
+                            span.banner_info_time 4h 2min 
+                            span.banner_info_ratting 8.8 
+                        p.banner_text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions. 
+                        .banner-btns 
+                            button.btn.btn--blue.btn--wi Watch 
+                            button.btn.btn--white More Information 
+        
+    include ./tvShows.pug
+
+    //-Genres 
+    section.section 
+        .container 
+            .section_inner 
+                h2.section_title(data-aos="flip-right", data-aos-duration="3000") 
+                    a(href="#").section_h2_link Popular Genres 
+                .section_content 
+                    .genres 
+                        ul.genres_list 
+                            li.genres_item.genres_item--romance(data-aos="zoom-in", data-aos-delay="100") 
+                                a(href="#") 
+                                    img(src="./assets/romance.svg", alt="romance")
+                                    h3.genres_item-title Romance
+                            li.genres_item.genres_item--drama(data-aos="zoom-in", data-aos-delay="200") 
+                                a(href="#") 
+                                    img(src="./assets/cinema.svg", alt="drama")
+                                    h3.genres_item-title Drama 
+                            li.genres_item.genres_item--historical(data-aos="zoom-in", data-aos-delay="300") 
+                                a(href="#") 
+                                    img(src="./assets/history.svg", alt="historical")
+                                    h3.genres_item-title Historical 
+                            li.genres_item.genres_item--action(data-aos="zoom-in", data-aos-delay="400") 
+                                a(href="#") 
+                                    img(src="./assets/killer.svg", alt="action")
+                                    h3.genres_item-title Action 
+                            li.genres_item.genres_item--sci-fi(data-aos="zoom-in", data-aos-delay="500") 
+                                a(href="#") 
+                                    img(src="./assets/rocket.svg", alt="sci-fi")
+                                    h3.genres_item-title Sci-fi
+                            li.genres_item.genres_item--horror(data-aos="zoom-in", data-aos-delay="600") 
+                                a(href="#") 
+                                    img(src="./assets/ghost.svg", alt="horror")
+                                    h3.genres_item-title Horror 
+                            li.genres_item.genres_item--comedy(data-aos="zoom-in", data-aos-delay="700") 
+                                a(href="#") 
+                                    img(src="./assets/smile.svg", alt="comedy")
+                                    h3.genres_item-title Comedy 
+                            li.genres_item.genres_item--documentary(data-aos="zoom-in", data-aos-delay="800") 
+                                a(href="#") 
+                                    img(src="./assets/castle.svg", alt="documentary")
+                                    h3.genres_item-title Documentary
+                            
+
+    //-actors
+    section.section 
+        .container 
+            .section_inner 
+                h2.section_title(data-aos="flip-right", data-aos-duration="3000") 
+                    a(href="#").section_h2_link Popular Actors & Directors 
+                .section_content(data-aos="zoom-in") 
+                    .people
+                        ul.people_list 
+                            li.people_person 
+                                a(href="#") 
+                                    img(src="./assets/one.png", alt="samantha") 
+                                    p.people_person-name Samantha Bowen 
+                            li.people_person 
+                                a(href="#") 
+                                    img(src="./assets/two.png", alt="birch") 
+                                    p.people_person-name Rhys Birch 
+                            li.people_person 
+                                a(href="#") 
+                                    img(src="./assets/three.png", alt="james") 
+                                    p.people_person-name James Holloway 
+                            li.people_person 
+                                a(href="#") 
+                                    img(src="./assets/four.png", alt="Jashua") 
+                                    p.people_person-name Jashua Waltom 
+                            li.people_person 
+                                a(href="#") 
+                                    img(src="./assets/five.png", alt="patrick") 
+                                    p.people_person-name Patrick Elliott 
+                            li.people_person 
+                                a(href="#") 
+                                    img(src="./assets/six.png", alt="Morgan") 
+                                    p.people_person-name Morgan Neill 
+                            li.people_person 
+                                a(href="#") 
+                                    img(src="./assets/two.png", alt="birch") 
+                                    p.people_person-name Rhys Birch
+
+    
+    //-marketing
+    .announce(data-aos="fade-down") 
+        .container 
+            a(href="#").announce_inner 
+                img(src="./assets/marketing/1.png", alt="announcement").announce_image-block 
+                .announce_text-block 
+                    img(src="./assets/marketing/2.png", alt="2021")
+
+
+
+    

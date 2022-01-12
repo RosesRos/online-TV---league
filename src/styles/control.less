@@ -1,0 +1,70 @@
+.control {
+    &_list {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    &_item {
+        margin-right: 75px;
+        .btn {
+            background-color: transparent;
+            border: none;
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            &-search {
+                background-image: url(../assets/search.svg);
+                width: 1rem;
+                height: 1rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &-notify {
+                background-image: url(../assets/bell.svg);
+                width: 1.2rem;
+                height: 1.35rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &-lk {
+                background-image: url(../assets/avatar__icon.svg);
+                width: 1rem;
+                height: 1.2rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        .btn {
+            transition: all .2s linear;
+        }
+
+        .btn:hover {
+            color: @outline;
+        }
+    }
+    @media all and (max-width: @tablet) {
+        display: none;
+        &.active {
+            display: block;
+            .btn {
+                color: rgba(@white, .5);
+            }
+        }
+    }
+    @media all and (min-width: 0) and (max-width: @mobile-landscape) and (orientation: landscape) {
+        &.active {
+            .control_item {
+                font-size: 20px;
+                &::after {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

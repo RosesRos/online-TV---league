@@ -1,0 +1,23 @@
+doctype html 
+html(lang="en") 
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")  
+        block title
+        link(rel="shortcut icon", href="./assets/logo.jpg", type="image/jpg") 
+    
+    body
+        //- page wrapper
+        .wrapper
+
+            //- header 
+            include ../partials/header.pug 
+
+            .main 
+                //- page content 
+                block content 
+                
+            //- footer 
+            include ../partials/footer.pug 
+    
